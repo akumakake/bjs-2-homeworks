@@ -1,7 +1,7 @@
 "use strict"
 function solveEquation(a, b, c) {
   let arr = [];
-  const d = b ** 2 - 4 * a * c
+  const d = b ** 2 - 4 * a * c;
 
   if (d < 0) {
     return arr;
@@ -10,12 +10,12 @@ function solveEquation(a, b, c) {
   if (d == 0) {
     const root = -b / (2 * a);
     arr.push(root);
-  return arr;
+    return arr;
   }
 
-  const sqrtd = Math.sqrt(d);
-  const root1 = (-b - sqrtd / (2 * a));
-  const root2 = (-b + sqrtd / (2 * a));
+  const sqrtD = Math.sqrt(d);
+  const root1 = (-b - sqrtD / (2 * a));
+  const root2 = (-b + sqrtD / (2 * a));
   arr.push(root1, root2);
 
   return arr;
