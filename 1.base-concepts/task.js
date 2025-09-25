@@ -7,15 +7,15 @@ function solveEquation(a, b, c) {
     return arr;
   }
 
-  if (d == 0) {
+  if (d === 0) {
     const root = -b / (2 * a);
     arr.push(root);
     return arr;
   }
 
   const sqrtD = Math.sqrt(d);
-  const root1 = (-b - sqrtD / (2 * a));
-  const root2 = (-b + sqrtD / (2 * a));
+  const root1 = (-b - sqrtD) / (2 * a);
+  const root2 = (-b + sqrtD) / (2 * a);
   arr.push(root1, root2);
 
   return arr;
