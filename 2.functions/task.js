@@ -25,13 +25,17 @@ function getArrayParams(...arr) {
 }
 
 function summElementsWorker(...arr) {
-  if (arr.length === 0){
+  if (arr.length === 0) {
     return 0;
   }
   return arr.reduce((sum, current) => sum + current, 0);
 }
 
 function differenceMaxMinWorker(...arr) {
+  if (arr.length === 0) {
+    return 0;
+  }
+
   const max = Math.max(...arr);
   const min = Math.min(...arr);
   return max-min;
