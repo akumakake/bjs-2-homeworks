@@ -19,7 +19,7 @@ function getArrayParams(...arr) {
     sum += arr[i];
   }
 
-  const avg = Numder((sum / arr.length).toFixed(2));
+  const avg = Number((sum / arr.length).toFixed(2));
 
   return { min, max, avg };
 }
